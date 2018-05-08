@@ -23,7 +23,6 @@ while (numberOptions.length < arraySize) {
   }
 }
 
-
 // for (var i = 0; i < arraySize; i++) {
 //   var random = Math.floor(Math.random() * 15) + 1;
 //   if (numberOptions[i] != random) {
@@ -41,9 +40,6 @@ var imageCrystal1 = $("#crystal1");
 imageCrystal1.attr("dataCrystalValue", numberOptions[0]);
 
 console.log(imageCrystal1.dataCrystalValue);
-
-
-
 
 // Set an on-click event that responds to button clicks of crystal1.
 $("#crystals").on("click", ".crystal-image", function () {
@@ -65,8 +61,6 @@ $("#crystals").on("click", ".crystal-image", function () {
     alert("You lose!!");
   }
 });
-
-
 
 // Each imageCrystal will be given a data attribute called data-crystalValue.
 // This data attribute will be set equal to the array value.
