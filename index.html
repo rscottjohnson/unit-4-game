@@ -11,97 +11,87 @@
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/stylev2.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <div id="wrapper">
-    <!-- Grid container -->
-    <div class="container">
 
-      <!-- Row 1 - Header row -->
-      <div class="row">
-        <div class="col-sm-12 col-md-12 head">
-          <h1>Crystals Collector!</h1>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Row 2 - Game info row with three text columns -->
-      <div class="row">
-        <div class="col-sm-4 col-md-4 info">
-          <h3>You will be given a random number at the start of the game.</h3>
-          <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
-            score.
-          </h4>
-        </div>
-        <div class="col-sm-4 col-md-4 info">
-          <h3>You win the game by matching your total score to random number.</h3>
-          <h4>You lose the game if your total score goes above the random number.</h4>
-        </div>
-        <div class="col-sm-4 col-md-4 info">
-          <h3>The value of each crystal is hidden from you until you click on it.</h3>
-          <h4> Each time when the game starts, the game will change the values of each crystal.</h4>
-        </div>
-      </div>
-      <hr>
-    </div>
-    
-  </div>
-
-  <!-- Images -->
+  <!-- Grid container -->
   <div class="container">
-    <div class="row imgRow">
-      <div class="col-sm-12 col-md-3 crystalImage">
-        <img id="crystal1" class="crystal-image img-thumbnail img-responsive" src="assets/images/hao-zhang-508008-unsplash.jpg" alt="clear gem Photo by Hao Zhang on Unsplash">
-      </div>
-      <div class="col-sm-12 col-md-3 crystalImage">
-        <img id="crystal2" class="crystal-image img-thumbnail img-responsive" src="assets/images/joshua-fuller-616699-unsplash.jpg"
-          alt="small red gem Photo by Joshua Fuller on Unsplash">
-      </div>
-      <div class="col-sm-12 col-md-3 crystalImage">
-        <img id="crystal3" class="crystal-image img-thumbnail img-responsive" src="assets/images/daria-volkova-479878-unsplash.jpg"
-          alt="multi gem Photo by Dario Volkova on Unsplash">
-      </div>
-      <div class="col-sm-12 col-md-3 crystalImage">
-        <img id="crystal4" class="crystal-image img-thumbnail img-responsive" src="assets/images/joshua-fuller-616702-unsplash.jpg"
-          alt="bigger red gem Photo by Joshua Fuller on Unsplash">
+
+    <!-- Row 1 - Header row -->
+    <div class="row">
+      <div class="col-sm-12 col-md-12 head">
+        <h1>Crystals Collector!</h1>
       </div>
     </div>
-  </div>
-  </div>
+    <hr>
 
-  <!-- Number to guess and total score area -->
-  <div class="container">
+    <!-- Row 2 - Game info row with three text columns -->
+    <div class="row">
+      <div class="col-sm-4 col-md-4 info">
+        <h3>You will be given a random number at the start of the game.</h3>
+        <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+        </h4>
+      </div>
+      <div class="col-sm-4 col-md-4 info">
+        <h3>You win the game by matching your total score to random number.</h3>
+        <h4>You lose the game if your total score goes above the random number.</h4>
+      </div>
+      <div class="col-sm-4 col-md-4 info">
+        <h3>The value of each crystal is hidden from you until you click on it.</h3>
+        <h4> Each time when the game starts, the game will change the values of each crystal.</h4>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Images -->
+    <div class="row">
+      <div class="col-lg-12 imgRow img-responsive img-thumbnail">
+      </div>
+    </div>
+
+    <!-- Number to guess and total score area -->
     <div class="row guessScore">
       <div class="col-sm-6 col-md-6 guess">
-        <h2>Number to Guess:<span id="number-to-guess"></span></h2>
+        <h2>Number to Guess:
+          <span id="numberToGuess"></span>
+        </h2>
       </div>
       <div class="col-sm-6 col-md-6 score">
-        <h2>Your Score:<span id="userScore"></span></h2>
+        <h2>Your Score:
+          <span id="userScore"></span>
+        </h2>
       </div>
     </div>
-  </div>
 
-  <!-- Wins / Losses area -->
-  <div class="container">
+    <!-- Wins / Losses area -->
     <div class="row winsLosses">
-      <div class="col-sm-6 col-md-6 wins">
-        <h2>Wins:<span id="wins"></span></h2>
+      <div class="col-sm-12 col-md-6 wins">
+        <h2>Wins:
+          <span id="wins"></span>
+        </h2>
       </div>
-      <div class="col-sm-6 col-md-6 losses">
-        <h2>Losses:<span id="losses"></span></h2>
+      <div class="col-sm-12 col-md-6 losses">
+        <h2>Losses:
+          <span id="losses"></span>
+        </h2>
       </div>
     </div>
-  </div>
 
-  <div class="push">
-  </div>
+    <!-- Result statement area -->
+    <div class="row statement">
+      <div class="col-sm-12 col-md-12">
+        <h1>
+          <span id="statement"></span>
+        </h1>
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
-    <div class="footer-container">
-      <span class="text-muted" id="p-footer">Copyright &copy;</span>
+    <div class="container">
+      Copyright &copy; Scott Johnson
     </div>
   </footer>
 

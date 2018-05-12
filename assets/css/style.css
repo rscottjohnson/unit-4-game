@@ -1,107 +1,75 @@
-/* html {
-  height: 100%;
-  margin: 0;
-} */
-
-/* .color-1 {color: #64b5f6;}
-.color-2 {color: #90caf9;}
-.color-3 {color: #bbdefb;}
-.color-4 {color: #e3f2fd;}
-.color-5 {color: #e1f5fe;}
-.color-6 {color: #aed6f1;} */
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 body {
-  font-family: 'Yatra One', cursive;
-  /* height: 100%;
-  margin: 0; */
-  /* background: url(../images/gplaypattern.png); */
+  color: #fff;
+  background: #48C9B0;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 65px;
 }
 
-.jumbotron {
-  background: #64b5f6;
-  padding: 25px 0px 25px 25px;
-  margin: 0px 0px 0px 0px;
+.head {
+  padding: 60px 0px 20px 10px;
+}
+
+.info {
+  padding-right: 5px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h4 {
+  margin-top: 30px;
+}
+
+hr {
+  border-width: 5px;
+  color: #fff;
+  margin: 20px 0px 20px 0px;
+}
+
+.imgRow {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.crystalImage {
+  height: auto;
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+.guessScore {
+  margin-top: 40px;
+}
+
+#numberToGuess, #userScore, #wins, #losses {
+  margin-left: 30px;
+  color: #000000;
+}
+
+.winsLosses {
+  margin-top: 10px;
+}
+
+.statement {
+  margin-top: 15px;
   text-align: center;
-}
-
-li {
-  font-size: 24px;
-}
-
-.list-group-item {
-  background: #90caf9;
-}
-
-.list-group-item-primary {
-  background: #bbdefb;
-}
-
-.list-group-item-info {
-  background: #e3f2fd;
-}
-
-.guessArea, .scoreArea {
-  float: left;
-}
-
-.scoreArea {
-  clear: right;
-}
-
-.card {
-  /* background: url(../images/gplaypattern.png); */
-}
-
-.wrapper {
-  /* min-height: 100%;
-  margin-bottom: -65px; */
-}
-
-.container {
-  margin-left: 0;
-  margin-right: 0;
-  /* text-align: center; */
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
   height: 65px;
-  /* added to support sticky footer */
+  line-height: 55px;
   width: 100%;
   background-color: #000000;
-  border-top: 10px solid #566573;
-}
-
-.footer-container {
-  background-color: #000000;
-  border: none;
+  color: #fff;
   text-align: center;
-  padding: 35px 0px 0px 0px;
+  font-size: 12px;
+  border-top: 5px solid #fff;
 }
-
-#p-footer {
-  background-color: #000000;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #FDFEFE;
-  text-align: center;
-  font-size: 0.625em;
-  /* changed from 10px */
-  padding: 0px 0px 0px 0px;
-}
-
-/* @media (max-width: 576px) {
-  .card,
-  .card-body,
-  #crystals,
-    {
-    font-size: 2.0em;
-  }
-}
-
-@media (max-width: 320px) {
-  .card,
-  .card-body,
-  #crystals,
-    {
-    font-size: 1.5em;
-  }
-} */
