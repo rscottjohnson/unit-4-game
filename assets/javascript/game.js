@@ -53,12 +53,14 @@ var imgArray = ["assets/images/crystal1.jpg", "assets/images/crystal2.jpg", "ass
 // and append these images into the image row.  Also, during the loop, 
 // create the numValue attribute and set it to the numberOptions[i] index.
 
-var imgRow = $(".imgRow");
+var imgContainer = $("#imgContainer");
 
 for (var i = 0; i < arraySize; i++) {
+  var imgDiv = $("<div>");
+  imgDiv.addClass("col-md-3 col-sm-6 col-xs-12");
   var imgCrystal = $("<img>");
   // give the image a crystalImage class
-  imgCrystal.addClass("crystalImage");
+  imgCrystal.addClass("crystalImage img-responsive img-thumbnail");
   // give the image an id
   imgCrystal.attr("id", i + 1);
   // link the image to a source in the imgArray
@@ -68,11 +70,13 @@ for (var i = 0; i < arraySize; i++) {
   // give the image a dataValue
   imgCrystal.attr("dataValue", numberOptions[i]);
   // add the image crystal to the page in the image row
-  imgRow.append(imgCrystal);
+  imgContainer.append(imgDiv);
+  imgDiv.append(imgCrystal);
+
 }
 
 // Set an on-click event that responds to clicks on the crystals.
-imgRow.on("click", ".crystalImage", function () {
+imgContainer.on("click", ".crystalImage", function () {
 
   // The $(this) keyword extracts the dataValue of the clicked crystal, while the .attr("dataValue")
   // allows us to grab the value out of the "dataValue" attribute.  The string element then needs

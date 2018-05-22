@@ -35,14 +35,14 @@ hr {
 
 .imgRow {
   margin-top: 10px;
-  width: 100%;
+  /* width: 100%; */
 }
 
-.crystalImage {
+/* .crystalImage {
   height: auto;
   width: calc(25% - 20px);
   margin: 10px;
-}
+} */
 
 .guessScore {
   margin-top: 40px;
